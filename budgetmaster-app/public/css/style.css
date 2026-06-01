@@ -1,0 +1,114 @@
+@import "./variables.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./sidebar.css";
+@import "./components.css";
+@import "./cards.css";
+@import "./forms.css";
+@import "./buttons.css";
+@import "./tables.css";
+@import "./animations.css";
+@import "./dashboard.css";
+@import "./login.css";
+@import "./responsive.css";
+@import "./utilities.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #d42121;
+  border-right: 1px solid #000000;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.menu button:hover {
+  background: #ffffff;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  outline: none;
+  color: #ffffff;
+}
+
+input:focus {
+  border-color: #ffffff;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #000000;
+  background: #d42121;
+  color: #000000;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* LISTA */
+.lista {
+  display: grid;
+  gap: 10px;
+}

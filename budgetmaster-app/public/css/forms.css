@@ -1,0 +1,23 @@
+input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 10px;
+
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+
+  background: #0f172a;
+
+  color: white;
+
+  font-size: 14px;
+}
+
+input:focus {
+
+  border-color: var(--primary);
+}

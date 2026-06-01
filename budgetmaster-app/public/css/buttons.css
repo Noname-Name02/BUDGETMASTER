@@ -1,0 +1,59 @@
+.primary-btn {
+
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: var(--primary);
+
+  color: #0f172a;
+
+  font-weight: bold;
+}
+
+.actions {
+
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.actions button {
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-weight: bold;
+}
+
+.approve-btn {
+  background: var(--success);
+}
+
+.reject-btn {
+  background: var(--danger);
+}
+
+.pending-btn {
+  background: var(--warning);
+}
+
+.delete-btn,
+.force-delete-btn {
+  background: #31027c;
+}
+
+.restore-btn {
+  background: #16a34a;
+}

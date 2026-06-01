@@ -1,0 +1,24 @@
+.stats {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.stats .card h3 {
+
+  color: var(--muted);
+
+  margin-bottom: 10px;
+}
+
+.stats .card p {
+
+  font-size: 28px;
+
+  font-weight: bold;
+}

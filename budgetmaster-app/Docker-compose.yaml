@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 7931
+      POSTGRES_DB: budgetdb
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    - ./infra/database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  app:
+    build:
+      context: .
+      dockerfile: infra/docker/Dockerfile
+
+    container_name: app_api
+    restart: always
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      DB_HOST: postgres
+      DB_USER: postgres
+      DB_PASSWORD: 7931
+      DB_NAME: budgetdb
+      DB_PORT: 5432
+
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

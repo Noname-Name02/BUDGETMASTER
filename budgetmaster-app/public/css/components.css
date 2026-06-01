@@ -1,0 +1,67 @@
+.page-header {
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+
+  font-size: 30px;
+
+  font-weight: bold;
+}
+
+.status {
+
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.status.pendente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.aprovado {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.recusado {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.values {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.values small {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--muted);
+}
+
+.empty {
+
+  text-align: center;
+
+  padding: 30px;
+
+  color: var(--muted);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetMaster</title>
+
+  <!-- CSS correto servido pelo Express -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <aside class="sidebar">
+      <h1 class="logo">BudgetMaster</h1>
+
+      <nav class="menu">
+        <button onclick="filtrar('all')">Todos</button>
+        <button onclick="filtrar('pendente')">Pendentes</button>
+        <button onclick="filtrar('aprovado')">Aprovados</button>
+        <button onclick="filtrar('recusado')">Recusados</button>
+        <button onclick="mostrarLixeira()">Lixeira</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+
+      <section class="card">
+        <h2>Novo orçamento</h2>
+
+        <input id="cliente" placeholder="Cliente">
+        <input id="descricao" placeholder="Descrição">
+        <input id="valor" type="number" placeholder="Valor">
+        <input id="custo" type="number" placeholder="Custo">
+
+        <button onclick="criar()">Criar orçamento</button>
+      </section>
+
+      <section id="lista" class="lista"></section>
+
+    </main>
+
+  </div>
+
+  <!-- JS correto servido pelo Express -->
+  <script type="module" src="/js/app.js"></script>
+
+</body>
+</html>
